@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pranomvignesh.bmiapp.MainActivity">
+
+
+    <EditText
+        android:id="@+id/Height"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:ems="10"
+        android:hint="Height in cm"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/Result"
+        android:layout_alignStart="@+id/Result" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        android:hint="BMI value"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="45sp"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/Weight"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:ems="10"
+        android:hint="Weight in kg"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/Height"
+        android:layout_alignLeft="@+id/Height"
+        android:layout_alignStart="@+id/Height" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="CalculateBMI"
+        android:text="Calculate BMI"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/Weight"
+        android:layout_alignLeft="@+id/Weight"
+        android:layout_alignStart="@+id/Weight" />
+
+</RelativeLayout>
